@@ -15,7 +15,7 @@ import Recipe from './recipe'
       getRecipes();
       
     },[query]);
-
+ //https://developer.edamam.com/edamam-docs-recipe-api to get the link below
     const getRecipes=async () =>{
       const response= await fetch(`https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`);
       const data = await response.json()
